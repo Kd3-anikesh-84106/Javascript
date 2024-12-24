@@ -1,0 +1,16 @@
+#Box{
+    height: 400px;
+    width:400px;
+    color: beige;
+    background-color: cadetblue;
+}
+.para{
+    height: 30%;
+    width: 60%;
+    color: cornsilk;
+   
+}
+.newClass{
+    background-color: chocolate;
+    
+}
