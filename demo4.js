@@ -16,22 +16,48 @@
 // // if we want 
 //  karanArjun.__proto__=employee;
 
-class Toyota{
+// class Toyota{
 
-    start(){
-        console.log("Start");
-    }
-    stop(){
-        console.log("stop")
-    }
+//     start(){
+//         console.log("Start");
+//     }
+//     stop(){
+//         console.log("stop")
+//     }
 
-    setBrand(brand){
-        this.brand = brand;
+//     setBrand(brand){
+//         this.brand = brand;
+//     }
+// }
+
+// let fortuner = new Toyota();
+// fortuner.setBrand("fortuner");
+
+// let lexus = new Toyota();
+// lexus.setBrand("lexus");
+
+class Person{
+    constructor(){
+        console.log("Enter parent constructor")
+        this.species="Homo spaiens";
+    }
+    eat(){
+        console.log("eat")
     }
 }
 
-let fortuner = new Toyota();
-fortuner.setBrand("fortuner");
+class Engineer extends Person{
 
-let lexus = new Toyota();
-lexus.setBrand("lexus");
+    constructor(branch){
+
+        console.log("Enter child Constructor")
+        super() //to invoke parent constructor
+        this.branch=branch;
+        console.log("exit child constructor")
+    }
+    work(){
+        console.log("Solve prb,build something")
+    }
+}
+
+let Engobj = new Engineer("Mechanical ENgineer")
