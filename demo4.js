@@ -36,28 +36,53 @@
 // let lexus = new Toyota();
 // lexus.setBrand("lexus");
 
-class Person{
-    constructor(){
-        console.log("Enter parent constructor")
-        this.species="Homo spaiens";
+// class Person{
+//     constructor(name){
+
+//         console.log("Enter parent constructor")
+//         this.species="Homo spaiens";
+//         this.name=name;
+//     }
+//     eat(){
+//         console.log("eat")
+//     }
+// }
+
+// class Engineer extends Person{
+
+//     constructor(){
+
+//         console.log("Enter child Constructor")
+//         super(name) //to invoke parent constructor
+       
+//     }
+//     work(){
+//         console.log("Solve prb,build something")
+//     }
+// }
+
+// let Engobj = new Engineer("Anikesh")
+
+class college{
+
+    constructor(name,email)
+    {
+        this.name=name;
+        this.email=email;
     }
-    eat(){
-        console.log("eat")
+
+    viewData(){
+        console.log("name =",this.name)
+        console.log("email =",this.email)
+        
     }
 }
 
-class Engineer extends Person{
+class Admin extends college{
 
-    constructor(branch){
-
-        console.log("Enter child Constructor")
-        super() //to invoke parent constructor
-        this.branch=branch;
-        console.log("exit child constructor")
-    }
-    work(){
-        console.log("Solve prb,build something")
+    editData(){
+        
     }
 }
 
-let Engobj = new Engineer("Mechanical ENgineer")
+let studObj = new college("Anikesh","anikesh@ymail.com")
